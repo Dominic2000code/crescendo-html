@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Crescendo Media|Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="bg-black text-white text-center p-3 font-bold text-4xl ">
+            <a to="/" class="site-name">
+                <h1>CRESCENDO</h1>
+            </a>
+        </div>
+        <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+        <nav class="bg-black shadow">
+            <div
+                class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+                <a href="#" class="text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">music</a>
+
+                <a href="#"
+                    class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">reviews</a>
+
+                <a href="#"
+                    class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">interviews</a>
+
+                <a href="#"
+                    class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">charts</a>
+
+                <a href="#"
+                    class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 11.9554V12.0446C1.01066 14.7301 1.98363 17.1885 3.59196 19.0931C4.05715 19.6439 4.57549 20.1485 5.13908 20.5987C5.70631 21.0519 6.31937 21.4501 6.97019 21.7853C7.90271 22.2656 8.91275 22.6165 9.97659 22.8143C10.5914 22.9286 11.2243 22.9918 11.8705 22.9993C11.9136 22.9998 11.9567 23 11.9999 23C15.6894 23 18.9547 21.1836 20.9502 18.3962C21.3681 17.8125 21.7303 17.1861 22.0291 16.525C22.6528 15.1448 22.9999 13.613 22.9999 12C22.9999 8.73978 21.5816 5.81084 19.3283 3.79653C18.8064 3.32998 18.2397 2.91249 17.6355 2.55132C15.9873 1.56615 14.0597 1 11.9999 1C11.888 1 11.7764 1.00167 11.6653 1.00499C9.99846 1.05479 8.42477 1.47541 7.0239 2.18719C6.07085 2.67144 5.19779 3.29045 4.42982 4.01914C3.7166 4.69587 3.09401 5.4672 2.58216 6.31302C2.22108 6.90969 1.91511 7.54343 1.6713 8.20718C1.24184 9.37631 1.00523 10.6386 1 11.9554ZM20.4812 15.0186C20.8171 14.075 20.9999 13.0588 20.9999 12C20.9999 9.54265 20.0151 7.31533 18.4186 5.6912C17.5975 7.05399 16.5148 8.18424 15.2668 9.0469C15.7351 10.2626 15.9886 11.5603 16.0045 12.8778C16.7692 13.0484 17.5274 13.304 18.2669 13.6488C19.0741 14.0252 19.8141 14.487 20.4812 15.0186ZM15.8413 14.8954C16.3752 15.0321 16.904 15.22 17.4217 15.4614C18.222 15.8346 18.9417 16.3105 19.5723 16.8661C18.0688 19.2008 15.5151 20.7953 12.5788 20.9817C13.5517 20.0585 14.3709 18.9405 14.972 17.6514C15.3909 16.7531 15.678 15.8272 15.8413 14.8954ZM13.9964 12.6219C13.9583 11.7382 13.7898 10.8684 13.5013 10.0408C10.6887 11.2998 7.36584 11.3765 4.35382 9.97197C4.01251 9.81281 3.68319 9.63837 3.36632 9.44983C3.12787 10.2584 2.99991 11.1142 2.99991 12C2.99991 13.9462 3.61763 15.748 4.6677 17.2203C6.83038 14.1875 10.3685 12.4987 13.9964 12.6219ZM6.047 18.7502C7.77258 16.059 10.7714 14.5382 13.8585 14.6191C13.723 15.3586 13.4919 16.093 13.1594 16.8062C12.3777 18.4825 11.1453 19.805 9.67385 20.6965C8.31043 20.3328 7.07441 19.6569 6.047 18.7502ZM11.9999 3C13.7846 3 15.4479 3.51946 16.847 4.41543C16.2113 5.54838 15.3593 6.4961 14.368 7.23057C13.3472 5.57072 11.8752 4.16433 10.027 3.21692C10.6619 3.07492 11.3222 3 11.9999 3ZM8.80619 4.84582C10.4462 5.61056 11.7474 6.80659 12.6379 8.23588C10.3464 9.24654 7.64722 9.30095 5.19906 8.15936C4.83384 7.98905 4.48541 7.79735 4.15458 7.58645C4.91365 6.24006 6.00929 5.10867 7.32734 4.30645C7.82672 4.44058 8.32138 4.61975 8.80619 4.84582Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+
+                <a href="#"
+                    class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m.75 19h7.092c4.552 0 6.131-6.037 2.107-8.203 2.701-2.354 1.029-6.797-2.595-6.797h-6.604c-.414 0-.75.336-.75.75v13.5c0 .414.336.75.75.75zm.75-13.5h5.854c3.211 0 3.215 4.768 0 4.768h-5.854zm0 6.268h6.342c3.861 0 3.861 5.732 0 5.732h-6.342z" />
+                        <path
+                            d="m18.374 7.857c-3.259 0-5.755 2.888-5.635 5.159-.247 3.28 2.397 5.984 5.635 5.984 2.012 0 3.888-1.065 4.895-2.781.503-.857-.791-1.613-1.293-.76-.739 1.259-2.12 2.041-3.602 2.041-2.187 0-3.965-1.668-4.125-3.771 1.443.017 4.136-.188 8.987-.033.016 0 .027-.008.042-.008 2-.09-.189-5.831-4.904-5.831zm-3.928 4.298c1.286-3.789 6.718-3.676 7.89.064-4.064.097-6.496-.066-7.89-.064z" />
+                        <path d="m21.308 6.464c.993 0 .992-1.5 0-1.5h-5.87c-.993 0-.992 1.5 0 1.5z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section class="relative bg-[url('images/herobackground.png')] bg-cover bg-center bg-no-repeat">
+            <div
+                class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-black/25">
+            </div>
+
+            <div
+                class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+                <div class="max-w-xl text-center sm:text-left">
+                    <h1 class="text-7xl text-gray-300 font-extrabold sm:text-8xl">
+                        MUSIC <br> COMES <br> ALIVE WITH <br> CRESCENDO
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- playlist section -->
+        <section class="py-6 sm:py-12">
+            <div class="max-w-screen-xl p-5 mx-auto">
+                <div class="flex justify-between mx-6 my-6">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Playlists</h3>
+                    </span>
+                    <span>
+                        <a href="#" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2 mx-6">
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/240x320&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+                            <div class="flex flex-col justify-start text-center text-gray-100">
+                                <span class="text-3xl font-semibold leading-none tracking-wide">04</span>
+                                <span class="leading-none uppercase">Aug</span>
+                            </div>
+                        </div>
+                        <h2 class="z-10 p-5">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Airplane Mode</a>
+                        </h2>
+                    </div>
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/241x320&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+                            <div class="flex flex-col justify-start text-center text-gray-100">
+                                <span class="text-3xl font-semibold leading-none tracking-wide">01</span>
+                                <span class="leading-none uppercase">Aug</span>
+                            </div>
+                        </div>
+                        <h2 class="z-10 p-5">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Astral traveling</a>
+                        </h2>
+                    </div>
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/242x320&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+                            <div class="flex flex-col justify-start text-center text-gray-100">
+                                <span class="text-3xl font-semibold leading-none tracking-wide">28</span>
+                                <span class="leading-none uppercase">Jul</span>
+                            </div>
+                        </div>
+                        <h2 class="z-10 p-5">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Nostalgic
+                                Journeys</a>
+                        </h2>
+                    </div>
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/243x320&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+                            <div class="flex flex-col justify-start text-center text-gray-100">
+                                <span class="text-3xl font-semibold leading-none tracking-wide">19</span>
+                                <span class="leading-none uppercase">Jul</span>
+                            </div>
+                        </div>
+                        <h2 class="z-10 p-5">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Music that Heals</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- upcoming artist section -->
+        <section class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+            <div class="container p-6 mx-auto space-y-8">
+                <div class="flex justify-between mx-6 my-6">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Up coming artists</h3>
+                    </span>
+                    <span>
+                        <a href="#" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?1">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te
+                                nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 1, 2020</span>
+                                <span>2.1K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?2">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 2, 2020</span>
+                                <span>2.2K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?3">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 3, 2020</span>
+                                <span>2.3K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?4">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 4, 2020</span>
+                                <span>2.4K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?5">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug   ">Te
+                                nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 1, 2020</span>
+                                <span>2.1K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?6">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 2, 2020</span>
+                                <span>2.2K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?7">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 3, 2020</span>
+                                <span>2.3K views</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt="" class="object-cover w-full h-52 bg-gray-500"
+                                src="https://source.unsplash.com/200x200/?fashion?8">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere
+                                reprimique his
+                                dolorum</h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>June 4, 2020</span>
+                                <span>2.4K views</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews -->
+        <section>
+            <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+                <div class="flex justify-between">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Reviews</h3>
+                    </span>
+                    <span>
+                        <a href="#" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="lg:flex items-stretch md:mt-12 mt-8">
+                    <div class="lg:w-1/2">
+                        <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
+                            <div class="sm:w-1/2 relative">
+                                <div>
+                                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                        12 April 2021</p>
+                                    <div class="absolute bottom-0 left-0 p-6">
+                                        <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                        <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                        <a href="javascript:void(0)"
+                                            class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/DYxtCJq/img-1.png" class="w-full" alt="chair" />
+                            </div>
+                            <div class="sm:w-1/2 sm:mt-0 mt-4 relative">
+                                <div>
+                                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                        12 April 2021</p>
+                                    <div class="absolute bottom-0 left-0 p-6">
+                                        <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                        <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                        <a href="javascript:void(0)"
+                                            class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/3C5HvxC/img-2.png" class="w-full" alt="wall design" />
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div>
+                                <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                    12 April 2021</p>
+                                <div class="absolute bottom-0 left-0 md:p-10 p-6">
+                                    <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                    <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                    <a href="javascript:void(0)"
+                                        class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                        <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                        <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place"
+                                class="w-full mt-8 md:mt-6 hidden sm:block" />
+                            <img class="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png"
+                                alt="sitting place" />
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
+                        <div class="relative">
+                            <div>
+                                <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                    12 April 2021</p>
+                                <div class="absolute bottom-0 left-0 md:p-10 p-6">
+                                    <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                    <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                    <a href="javascript:void(0)"
+                                        class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                        <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                        <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place"
+                                class="w-full sm:block hidden" />
+                            <img class="w-full sm:hidden" src="https://i.ibb.co/dpXStJk/Rectangle-29.png"
+                                alt="sitting place" />
+                        </div>
+                        <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
+                            <div class="relative w-full">
+                                <div>
+                                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                        12 April 2021</p>
+                                    <div class="absolute bottom-0 left-0 p-6">
+                                        <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                        <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                        <a href="javascript:void(0)"
+                                            class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/3yvZBpm/img-5.png" class="w-full" alt="chair" />
+                            </div>
+                            <div class="relative w-full sm:mt-0 mt-4">
+                                <div>
+                                    <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">
+                                        12 April 2021</p>
+                                    <div class="absolute bottom-0 left-0 p-6">
+                                        <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                                        <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                                        <a href="javascript:void(0)"
+                                            class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <p class="pr-2 text-sm font-medium leading-none">Read More</p>
+                                            <svg class="fill-stroke" width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="https://i.ibb.co/gDdnJb5/img-6.png" class="w-full" alt="wall design" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="p-4 bg-black md:px-6 md:py-8  text-white">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a to="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="images/logo.png" class="mr-3 h-8 logo " alt="Crescendo Logo" />
+                <span class="self-center uppercase text-2xl font-semibold whitespace-nowrap dark:text-white">
+                    crescendo
+                </span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a to="/about" class="mr-4 hover:underline md:mr-6 ">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a to="/privacy-policy" class="mr-4 hover:underline md:mr-6">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a to="/privacy-policy" class="mr-4 hover:underline md:mr-6">
+                        Privacy Policy
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                © 2023
+                <a to="/" class="hover:underline">
+                    Crescendo™
+                </a>
+                - All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a to="#" class="text-gray-500 hover:text-gray-300 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a to="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a to="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
