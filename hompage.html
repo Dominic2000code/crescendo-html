@@ -483,6 +483,9 @@
 
     </main>
 
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-12 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-900 text-white text-2xl font-bold">&uarr;</button>
+
     <footer class="p-4 bg-black md:px-6 md:py-8  text-white">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a to="#" class="flex items-center mb-4 sm:mb-0">
@@ -545,6 +548,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let toTopButton = document.getElementById("to-top-button");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
