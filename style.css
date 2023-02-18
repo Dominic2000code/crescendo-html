@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
 body {
     background-image: linear-gradient(to bottom right, #22c9e1, #14464e, #102528, #000);
+    font-family: 'Playfair Display', serif;
 }
 
 
