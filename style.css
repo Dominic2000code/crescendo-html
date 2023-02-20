@@ -28,3 +28,15 @@ body {
 .link-underline:hover::after {
     transform: scaleX(1.1);
 }
+
+#sidebar {
+    max-height: calc(100vh - 60px);
+    /* adjust the height as needed */
+    overflow-y: auto;
+}
+
+#main {
+    height: calc(100vh - 100px);
+    /* adjust the height as needed */
+    overflow-y: auto;
+}
