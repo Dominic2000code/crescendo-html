@@ -56,3 +56,20 @@ body {
 .gradient-3 {
     background-image: linear-gradient(to right, #9fb722, #677171);
 }
+
+button svg {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+button:hover svg {
+    opacity: 1;
+}
+
+button svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover svg {
+    transform: translateX(10px);
+}
