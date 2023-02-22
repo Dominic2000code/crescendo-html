@@ -17,7 +17,7 @@
                 <a href="#" class="site-name ">
                     <h1 class="mx-auto">CRESCENDO</h1>
                 </a>
-                <a href="#" class="text-gray-100 absolute left-7 top-7">
+                <a id="search-button" href="#" class="text-gray-100 hover:text-teal-700 absolute left-0 top-0 m-7">
                     <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
@@ -718,6 +718,7 @@
 
     </main>
 
+
     <button id="to-top-button" onclick="goToTop()" title="Go To Top"
         class="hidden fixed z-90 bottom-12 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-900 text-white text-2xl font-bold">&uarr;</button>
 
@@ -784,8 +785,47 @@
         </div>
     </footer>
 
+    <div id="my-overlay" class="fixed z-50 inset-0 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <!-- Overlay -->
+            <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
+            </div>
+
+            <!-- Content -->
+            <div class='max-w-md mx-auto'>
+                <div
+                    class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+                    <div class="grid place-items-center h-full w-12 text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <input class="peer h-full w-full outline-none text-sm text-gray-700 pr-2" type="text" id="search"
+                        placeholder="Search something.." />
+                </div>
+            </div>
+
+            <svg width="25" height="25"
+                class="absolute top-0 right-0 m-5 text-gray-200 hover:cursor-pointer hover:text-teal-700 focus:outline-none"
+                id="close-overlay" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+            </svg>
+
+        </div>
+    </div>
+
+
     <script>
         let toTopButton = document.getElementById("to-top-button");
+        const button = document.querySelector('#search-button');
+        const overlay = document.querySelector('#my-overlay');
+        const overlayCloseButton = document.querySelector('#close-overlay');
 
         // When the user scrolls down 200px from the top of the document, show the button
         window.onscroll = function () {
@@ -800,6 +840,15 @@
         function goToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+
+        button.addEventListener('click', () => {
+            overlay.classList.toggle('hidden');
+        });
+        overlayCloseButton.addEventListener('click', () => {
+            overlay.classList.toggle('hidden');
+        });
+
     </script>
 </body>
 
