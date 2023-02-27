@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Crescendo Media|Home</title>
 </head>
 
@@ -148,8 +149,8 @@
         </section>
 
         <!-- upcoming artist section -->
-        <section id="upcoming-artist-secttion" class="py-6 sm:py-12">
-            <div class="container p-6 mx-auto space-y-8">
+        <section id="upcoming-artist-section" class="py-6 sm:py-12">
+            <div class="upcoming-artist animate__animated container p-6 mx-auto space-y-8">
                 <div class="flex justify-between mx-4 my-4">
                     <span>
                         <h3 class="uppercase text-gray-300">Up coming artists</h3>
@@ -848,6 +849,20 @@
         overlayCloseButton.addEventListener('click', () => {
             overlay.classList.toggle('hidden');
         });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const upcomingArtist = entry.target.querySelector('.upcoming-artist');
+
+                if (entry.isIntersecting) {
+                    upcomingArtist.classList.add('animate__fadeInUp');
+                    return; // if we added the class, exit the function
+                }
+
+            });
+        });
+
+        observer.observe(document.querySelector('#upcoming-artist-section'));
 
     </script>
 </body>
