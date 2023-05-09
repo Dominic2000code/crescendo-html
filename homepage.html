@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Crescendo Media|Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="bg-black text-white text-center p-3 font-bold text-4xl">
+                <a href="./homepage.html" class="site-name ">
+                    <h1 class="mx-auto">CRESCENDO</h1>
+                </a>
+                <a id="search-button" href="#" class="text-gray-100 hover:text-teal-700 absolute left-0 top-0 m-7">
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </a>
+            </div>
+            <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+            <nav class="bg-black text-white hidden md:block">
+                <ul class="flex justify-center">
+                    <li class="px-16 py-4 text-teal-500 uppercase hover:underline font-thin">
+
+                        <a href="./playlists.html"> MUSIC</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./many.html"> REVIEWS</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./many.html"> INTERVIEWS</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./charts.html"> CHARTS</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero-section"
+            class="relative bg-[url('images/herobackground.png')] bg-cover bg-center bg-no-repeat">
+            <div
+                class="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-black/25">
+            </div>
+
+            <div
+                class="relative mx-auto max-w-screen-xl px-4 py-10 sm:py-20 md:py-24 lg:flex lg:h-screen lg:items-center lg:px-8">
+                <div class="max-w-xl text-center sm:text-left">
+                    <h1 class="text-2xl text-gray-300 font-extrabold sm:text-5xl md:text-6xl lg:text-8xl">
+                        MUSIC <br> COMES <br> ALIVE WITH <br> CRESCENDO
+                    </h1>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- playlist section -->
+        <section id="playlist-section" class="py-6 sm:py-12">
+            <div class="max-w-screen-xl p-5 mx-auto">
+                <div class="flex justify-between my-4 mx-4">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Playlists</h3>
+                    </span>
+                    <span>
+                        <a href="./playlists.html" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2 mx-6">
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500 transform transition duration-500 hover:scale-95"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/240x320/?playlist?1&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+                        </div>
+                        <h2 class="z-10 p-5">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Airplane Mode</a>
+                        </h2>
+                    </div>
+
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500 transform transition duration-500 hover:scale-95"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/241x320/?playlist?2&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+
+                        </div>
+                        <h2 class="z-10 p-5 ">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Astral traveling</a>
+                        </h2>
+                    </div>
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500 transform transition duration-500 hover:scale-95"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/242x320/?playlist?3&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+
+                        </div>
+                        <h2 class="z-10 p-5 ">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Nostalgic
+                                Journeys</a>
+                        </h2>
+                    </div>
+                    <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 bg-gray-500 transform transition duration-500 hover:scale-95"
+                        style="background-image: url(&quot;https://source.unsplash.com/random/243x320/?playlist?4&quot;);">
+                        <div
+                            class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900">
+                        </div>
+                        <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                            <a rel="noopener noreferrer" href="#"
+                                class="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 bgundefined">Playlist</a>
+
+                        </div>
+                        <h2 class="z-10 p-5 ">
+                            <a rel="noopener noreferrer" href="#"
+                                class="font-medium text-md hover:underline text-gray-100">Music that Heals</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- upcoming artist section -->
+        <section id="upcoming-artist-section" class="py-6 sm:py-12">
+            <div class="upcoming-artist animate__animated container p-6 mx-auto space-y-8">
+                <div class="flex justify-between mx-4 my-4">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Up coming artists</h3>
+                    </span>
+                    <span>
+                        <a href="#" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?1">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?2">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?3">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?4">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?5">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?6">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?7">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col bg-gray-100">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <img alt=""
+                                class="object-cover w-full h-52 bg-gray-500 transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/200x200/?abstract?8">
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a rel="noopener noreferrer" href="#"
+                                aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a rel="noopener noreferrer" href="#"
+                                class="text-xs tracking-wider uppercase hover:underline text-teal-400">up coming
+                                artist</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">
+                                <a class="hover:underline" href="#">
+                                    Tenulla oportere
+                                    reprimique his
+                                    dolorum
+                                </a>
+                            </h3>
+                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-400">
+                                <span>Leroy Jenkins</span>
+                                <span
+                                    class="text-gray-400 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none  pr-3 ">
+                                    June 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- reviews section-->
+
+        <section id="reviews-sections" class="container p-6 mx-auto space-y-8">
+            <div class="flex justify-between mx-4 my-4">
+                <span>
+                    <h3 class="uppercase text-gray-300">Reviews</h3>
+                </span>
+                <span>
+                    <a href="./many.html" class="uppercase link-underline text-gray-300">View all</a>
+                </span>
+            </div>
+            <div class="bg-gray-100 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div class="container grid grid-cols-12 mx-auto bg-gray-100">
+                    <div class="bg-no-repeat bg-cover bg-gray-700 col-span-full lg:col-span-4 transform transition duration-500 hover:scale-95"
+                        style="background-image: url('https://source.unsplash.com/640x480/?music?1'); background-position: center center; background-size: cover;">
+                    </div>
+                    <div class="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
+                        <div class="flex justify-start">
+                            <h2 class="py-1 tracking-widest text-sm title-font font-medium text-teal-500 uppercase">
+                                Review
+                            </h2>
+                        </div>
+                        <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit.</h1>
+                        <p class="flex-1 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                            reprehenderit adipisci tempore voluptas laborum quod.</p>
+                        <a rel="noopener noreferrer" href="#"
+                            class="inline-flex items-center pt-2 pb-6 space-x-2 text-sm text-teal-400">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-4 h-4">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <div class="flex items-center justify-between pt-2 text-gray-400">
+                            <div class="flex space-x-2">
+                                <span class="self-center text-sm">Leroy Jenkins</span>
+                            </div>
+                            <span class="text-sm">June 1, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div class="container grid grid-cols-12 mx-auto bg-gray-100">
+                    <div class="bg-no-repeat bg-cover bg-gray-700 col-span-full lg:col-span-4 transform transition duration-500 hover:scale-95"
+                        style="background-image: url('https://source.unsplash.com/640x480/?music?2'); background-position: center center;  background-size: cover;">
+                    </div>
+                    <div class="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
+                        <div class="flex justify-start">
+                            <h2 class="py-1 tracking-widest text-sm title-font font-medium text-teal-500 uppercase">
+                                Review
+                            </h2>
+                        </div>
+                        <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit.</h1>
+                        <p class="flex-1 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                            reprehenderit adipisci tempore voluptas laborum quod.</p>
+                        <a rel="noopener noreferrer" href="#"
+                            class="inline-flex items-center pt-2 pb-6 space-x-2 text-sm text-teal-400">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-4 h-4">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <div class="flex items-center justify-between pt-2 text-gray-400">
+                            <div class="flex space-x-2">
+                                <span class="self-center text-sm">Leroy Jenkins</span>
+                            </div>
+                            <span class="text-sm">June 1, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div class="container grid grid-cols-12 mx-auto bg-gray-100">
+                    <div class="bg-no-repeat bg-cover bg-gray-700 col-span-full lg:col-span-4 transform transition duration-500 hover:scale-95"
+                        style="background-image: url('https://source.unsplash.com/640x480/?music?3'); background-position: center center; background-size: cover;">
+                    </div>
+                    <div class="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
+                        <div class="flex justify-start">
+                            <h2 class="py-1 tracking-widest text-sm title-font font-medium text-teal-500 uppercase">
+                                Review
+                            </h2>
+                        </div>
+                        <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit.</h1>
+                        <p class="flex-1 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                            reprehenderit adipisci tempore voluptas laborum quod.</p>
+                        <a rel="noopener noreferrer" href="#"
+                            class="inline-flex items-center pt-2 pb-6 space-x-2 text-sm text-teal-400">
+                            <span>Read more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-4 h-4">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <div class="flex items-center justify-between pt-2 text-gray-400">
+                            <div class="flex space-x-2">
+                                <span class="self-center text-sm">Leroy Jenkins</span>
+                            </div>
+                            <span class="text-sm">June 1, 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- interviews section -->
+        <section id="interviews-section" class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex justify-between mx-4 my-4">
+                    <span>
+                        <h3 class="uppercase text-gray-300">Interviews</h3>
+                    </span>
+                    <span>
+                        <a href="#" class="uppercase link-underline text-gray-300">View all</a>
+                    </span>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full border-2 border-gray-200 border-opacity-60 bg-gray-100 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/720x400/?abstract?1" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    INTERVIEW
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a href="./single.html" class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0">Read
+                                        More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-xs pr-3 py-1 border-r-2 border-gray-200">
+
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-xs">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full border-2 border-gray-200 border-opacity-60 bg-gray-100 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/720x400/?abstract?2" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    INTERVIEW
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap">
+                                    <a href="#" class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0">Read
+                                        More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-xs pr-3 py-1 border-r-2 border-gray-200">
+
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-xs">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full border-2 border-gray-200 border-opacity-60 bg-gray-100 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center transform transition duration-500 hover:scale-95"
+                                src="https://source.unsplash.com/720x400/?abstract?3" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    INTERVIEW
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a href="#" class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0">Read
+                                        More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-xs pr-3 py-1 border-r-2 border-gray-200">
+
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-xs">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- latest section -->
+        <section id="latest-section" class="bg-gray-200">
+            <h3 class="text-center text-2xl pt-24">Latest</h3>
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 pb-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        <div class="p-4 lg:w-1/3">
+                            <div
+                                class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    Music Review
+                                </h2>
+                                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Raclette
+                                    Blueberry Nextious Level</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <a href="#" class="text-teal-500 inline-flex items-center">Read More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <div
+                                    class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                            <div
+                                class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    Music Review
+                                </h2>
+                                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Ennui
+                                    Snackwave Thundercats</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <a href="#" class="text-teal-500 inline-flex items-center">Read More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <div
+                                    class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 lg:w-1/3">
+                            <div
+                                class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-teal-500 mb-1 uppercase">
+                                    Music Review
+                                </h2>
+                                <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Selvage Poke
+                                    Waistcoat Godard</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <a href="#" class="text-teal-500 inline-flex items-center">Read More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <div
+                                    class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        Leroy Jenkins
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        June 1, 2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-12 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-900 text-white text-2xl font-bold">&uarr;</button>
+
+    <footer class="p-4 bg-black md:px-6 md:py-8  text-white">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="images/logo.png" class="mr-3 h-8 logo " alt="Crescendo Logo" />
+                <span class="self-center uppercase text-2xl font-semibold whitespace-nowrap dark:text-white">
+                    crescendo
+                </span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                © 2023
+                <a href="/" class="hover:underline">
+                    Crescendo™
+                </a>
+                - All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-300 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="my-overlay" class="fixed z-50 inset-0 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <!-- Overlay -->
+            <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
+            </div>
+
+            <!-- Content -->
+            <div class='max-w-md mx-auto'>
+                <div
+                    class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+                    <div class="grid place-items-center h-full w-12 text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <input class="peer h-full w-full outline-none text-sm text-gray-700 pr-2" type="text" id="search"
+                        placeholder="Search something.." />
+                </div>
+            </div>
+
+            <svg width="25" height="25"
+                class="absolute top-0 right-0 m-5 text-gray-200 hover:cursor-pointer hover:text-teal-700 focus:outline-none"
+                id="close-overlay" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+            </svg>
+
+        </div>
+    </div>
+
+
+    <script>
+        let toTopButton = document.getElementById("to-top-button");
+        const button = document.querySelector('#search-button');
+        const overlay = document.querySelector('#my-overlay');
+        const overlayCloseButton = document.querySelector('#close-overlay');
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+        button.addEventListener('click', () => {
+            overlay.classList.toggle('hidden');
+        });
+        overlayCloseButton.addEventListener('click', () => {
+            overlay.classList.toggle('hidden');
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const upcomingArtist = entry.target.querySelector('.upcoming-artist');
+
+                if (entry.isIntersecting) {
+                    upcomingArtist.classList.add('animate__fadeInUp');
+                    return; // if we added the class, exit the function
+                }
+
+            });
+        });
+
+        observer.observe(document.querySelector('#upcoming-artist-section'));
+
+    </script>
+</body>
+
+</html>
