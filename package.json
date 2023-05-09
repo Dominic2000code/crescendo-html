@@ -1,0 +1,23 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominic2000code/crescendo-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dominic2000code/crescendo-html/issues"
+  },
+  "homepage": "https://github.com/Dominic2000code/crescendo-html",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
