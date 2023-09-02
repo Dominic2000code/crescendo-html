@@ -114,3 +114,26 @@ button svg {
 button:hover svg {
     transform: translateX(10px);
 }
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+}
+
+.fade-up.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}

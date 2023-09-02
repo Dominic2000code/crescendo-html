@@ -15,9 +15,11 @@
     <header>
         <div class="main-nav">
             <div class="bg-black text-white text-center p-3 font-bold text-4xl">
-                <a href="./homepage.html" class="site-name ">
-                    <h1 class="mx-auto">CRESCENDO</h1>
-                </a>
+                <h1 class="mx-auto">
+                    <a href="./homepage.html" class="site-name ">
+                        CRESCENDO
+                    </a>
+                </h1>
                 <a id="search-button" href="#" class="text-gray-100 hover:text-teal-700 absolute left-0 top-0 m-7">
                     <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -805,7 +807,7 @@
                         </svg>
                     </div>
 
-                    <input class="peer h-full w-full outline-none text-sm text-gray-700 pr-2" type="text" id="search"
+                    <input class="peer h-full w-64 outline-none text-sm text-gray-700 pr-2" type="text" id="search"
                         placeholder="Search something.." />
                 </div>
             </div>
@@ -824,7 +826,7 @@
 
     <script>
         let toTopButton = document.getElementById("to-top-button");
-        const button = document.querySelector('#search-button');
+        const searchButton = document.querySelector('#search-button');
         const overlay = document.querySelector('#my-overlay');
         const overlayCloseButton = document.querySelector('#close-overlay');
 
@@ -841,13 +843,21 @@
         function goToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-
-        button.addEventListener('click', () => {
+        function closeOverlay() {
             overlay.classList.toggle('hidden');
+        }
+
+
+        searchButton.addEventListener('click', () => {
+            closeOverlay()
         });
         overlayCloseButton.addEventListener('click', () => {
-            overlay.classList.toggle('hidden');
+            closeOverlay()
+        });
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeOverlay();
+            }
         });
 
         const observer = new IntersectionObserver(entries => {
