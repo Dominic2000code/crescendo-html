@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Crescendo Media|Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <div class="bg-black text-white text-center p-3 font-bold text-4xl">
+                <h1 class="mx-auto">
+                    <a href="./homepage.html" class="site-name ">
+                        CRESCENDO
+                    </a>
+                </h1>
+                <a id="search-button" href="#" class="text-gray-100 hover:text-teal-700 absolute left-0 top-0 m-7">
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </a>
+            </div>
+            <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+            <nav class="bg-black text-white hidden md:block">
+                <ul class="flex justify-center">
+                    <li class="px-16 py-4 text-teal-500 uppercase hover:underline font-thin">
+
+                        <a href="./playlists.html"> MUSIC</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./many.html"> REVIEWS</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./many.html"> INTERVIEWS</a>
+                    </li>
+                    <li class="px-16 py-4 uppercase hover:underline font-thin">
+
+                        <a href="./charts.html"> CHARTS</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="block h-0.5 animate-pulse bg-gray-600"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="p-6 sm:p-12 bg-white text-black">
+            <div class="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
+                <img src="https://images.pexels.com/photos/7533347/pexels-photo-7533347.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" class="self-center object-cover flex-shrink-0 w-24 h-24  md:justify-self-start bg-gray-500 ">
+                <div class="flex flex-col">
+                    <h4 class="text-lg font-semibold text-center md:text-left">Leroy Jenkins</h4>
+                    <p class="text-black">Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-4 space-x-4 align-center">
+                <a rel="noopener noreferrer" href="#" aria-label="GitHub" class="p-2 rounded-md text-black hover:text-teal-600">
+                    <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                    </svg>
+                </a>
+                <a rel="noopener noreferrer" href="#" aria-label="Dribble" class="p-2 rounded-md text-black hover:text-teal-600">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current">
+                        <path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
+                    </svg>
+                </a>
+                <a rel="noopener noreferrer" href="#" aria-label="Twitter" class="p-2 rounded-md text-black hover:text-teal-600">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current">
+                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg>
+                </a>
+                <a rel="noopener noreferrer" href="#" aria-label="Email" class="p-2 rounded-md text-black hover:text-teal-600">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current">
+                        <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2 class="text-center p-5 text-2xl md:text-3xl lg:text5xl md:p-10 text-gray-100 uppercase">Posts by Leroy Jenkins</h2>
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
+                            <img class="w-full transform transition duration-500 hover:scale-95"
+                                src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                                alt="Article Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-teal-500 tracking-widest  text-xs uppercase">Review</div>
+                                <h1 class="text-lg  title-font mb-2">Title of the Article</h1>
+                                <div class="text-sm text-gray-600 mb-2">
+                                    <p class="inline">Leroy Jenkins</p>
+                                    <span class="mx-1">-</span>
+                                    <p class="inline">June 1, 2020</p>
+                                </div>
+                                <p class="leading-relaxed text-gray-800 text-sm mb-3 hidden sm:block">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
+                                </p>
+                                <a href="#"
+                                    class="text-teal-500 inline-flex items-center md:mb-2 lg:mb-0 hover:underline">
+                                    Read more
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-12 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-900 text-white text-2xl font-bold">&uarr;</button>
+
+    <footer class="p-4 bg-black md:px-6 md:py-8  text-white">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center mb-4 sm:mb-0">
+                <img src="images/logo.png" class="mr-3 h-8 logo " alt="Crescendo Logo" />
+                <span class="self-center uppercase text-2xl font-semibold whitespace-nowrap dark:text-white">
+                    crescendo
+                </span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                © 2023
+                <a href="/" class="hover:underline">
+                    Crescendo™
+                </a>
+                - All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-300 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clipRule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="my-overlay" class="fixed z-50 inset-0 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen">
+            <!-- Overlay -->
+            <div class="fixed inset-0 transition-opacity">
+                <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
+            </div>
+
+            <!-- Content -->
+            <div class='max-w-md mx-auto'>
+                <div
+                    class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+                    <div class="grid place-items-center h-full w-12 text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <input class="peer h-full w-64 outline-none text-sm text-gray-700 pr-2" type="text" id="search"
+                        placeholder="Search something.." />
+                </div>
+            </div>
+
+            <svg width="25" height="25"
+                class="absolute top-0 right-0 m-5 text-gray-200 hover:cursor-pointer hover:text-teal-700 focus:outline-none"
+                id="close-overlay" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+            </svg>
+
+        </div>
+    </div>
+
+
+    <script>
+        let toTopButton = document.getElementById("to-top-button");
+        const searchButton = document.querySelector('#search-button');
+        const overlay = document.querySelector('#my-overlay');
+        const overlayCloseButton = document.querySelector('#close-overlay');
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function closeOverlay() {
+            overlay.classList.toggle('hidden');
+        }
+
+
+        searchButton.addEventListener('click', () => {
+            closeOverlay()
+        });
+        overlayCloseButton.addEventListener('click', () => {
+            closeOverlay()
+        });
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeOverlay();
+            }
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const upcomingArtist = entry.target.querySelector('.upcoming-artist');
+
+                if (entry.isIntersecting) {
+                    upcomingArtist.classList.add('animate__fadeInUp');
+                    return; // if we added the class, exit the function
+                }
+
+            });
+        });
+
+        observer.observe(document.querySelector('#upcoming-artist-section'));
+
+    </script>
+</body>
+
+</html>
