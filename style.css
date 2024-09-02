@@ -32,13 +32,13 @@ body {
 #sidebar {
     max-height: calc(100vh - 60px);
     /* adjust the height as needed */
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
 #main {
     height: calc(100vh - 100px);
     /* adjust the height as needed */
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
 .box {
@@ -141,11 +141,11 @@ button:hover svg {
 @layer utilities {
     /* Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+        display: none !important;
     }
 
     .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none !important; /* IE and Edge */
+      scrollbar-width: none !important; /* Firefox */
     }
 }
