@@ -138,14 +138,11 @@ button:hover svg {
     -o-transform: translateY(0);
 }
 
-@layer utilities {
-    /* Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none !important;
-    }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
-    .no-scrollbar {
-      -ms-overflow-style: none !important; /* IE and Edge */
-      scrollbar-width: none !important; /* Firefox */
-    }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
