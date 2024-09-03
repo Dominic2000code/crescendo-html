@@ -48,6 +48,23 @@
             <section class="lg:col-span-9 no-scrollbar col-span-12 " id="main">
                 <h2 class="text-center p-5 text-3xl md:text-4xl lg:text6xl md:p-10 text-gray-100 uppercase">Reviews</h2>
                 <div class="container mx-auto px-4">
+                    <div class="text-white m-5 relative inline-block">
+                        <input type="checkbox" id="sortbox" class="hidden absolute">
+                        <label for="sortbox" class="flex items-center space-x-1 cursor-pointer">
+                        <span class="text-md">Sort By</span>
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </label>
+                    
+                            <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-xs shadow rounded opacity-0 bg-gray-300 border border-gray-400 transition delay-75 ease-in-out z-10">
+                            <ul class="block text-right text-gray-900">
+                                <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Latest</a></li>
+                                <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Oldest</a></li>
+                                <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">A - Z</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="card max-w-sm bg-gray-100 overflow-hidden shadow-lg">
                             <img class="w-full transform transition duration-500 hover:scale-95"

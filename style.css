@@ -146,3 +146,8 @@ button:hover svg {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+/* for dropdown in many.html */
+#sortbox:checked ~ #sortboxmenu {
+    opacity: 1;
+}
