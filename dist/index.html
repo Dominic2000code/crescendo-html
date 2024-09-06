@@ -27,6 +27,13 @@
                             d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                     </svg>
                 </a>
+                <a id="subscribe-button" class="rounded-md text-gray-100 hover:text-teal-700 absolute right-0 top-0 m-7">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current">
+                        <path
+                            d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                        </path>
+                    </svg>
+                </a>
             </div>
             <span class="block h-0.5 animate-pulse bg-gray-600"></span>
             <nav class="bg-black text-white hidden md:block">
@@ -679,7 +686,7 @@
         <div class="flex items-center justify-center min-h-screen">
             <!-- Overlay -->
             <div class="fixed inset-0 transition-opacity">
-                <div class="absolute inset-0 bg-gray-800 opacity-75"></div>
+                <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
             </div>
 
             <!-- Content -->
@@ -710,12 +717,77 @@
         </div>
     </div>
 
+    <div class="modal-container">
+        <!-- Background overlay -->
+        <div id="modal-overlay" class="fixed inset-0 transition-opacity hidden" aria-hidden="true">
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <!-- Modal -->
+        <div id="modal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+            <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <!-- Modal panel -->
+                <div class="w-full inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                    role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <!-- Modal content -->
+                        <div class="sm:flex sm:items-start">
+                            <div
+                                class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                                <!-- Icon for newsletter -->
+                                <svg width="64px" height="64px" viewBox="0 0 24 24" class="h-6 w-6 text-blue-600"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#008080" stroke-width="0.36">
+                                    <!-- SVG paths -->
+                                    <g id="email">
+                                        <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.88534 5.2371C3.20538 5.86848 2.75 6.89295 2.75 8.5V15.5C2.75 17.107 3.20538 18.1315 3.88534 18.7629C4.57535 19.4036 5.61497 19.75 7 19.75H17C18.385 19.75 19.4246 19.4036 20.1147 18.7629C20.7946 18.1315 21.25 17.107 21.25 15.5V8.5C21.25 6.89295 20.7946 5.86848 20.1147 5.2371C19.4246 4.59637 18.385 4.25 17 4.25H7C5.61497 4.25 4.57535 4.59637 3.88534 5.2371ZM2.86466 4.1379C3.92465 3.15363 5.38503 2.75 7 2.75H17C18.615 2.75 20.0754 3.15363 21.1353 4.1379C22.2054 5.13152 22.75 6.60705 22.75 8.5V15.5C22.75 17.393 22.2054 18.8685 21.1353 19.8621C20.0754 20.8464 18.615 21.25 17 21.25H7C5.38503 21.25 3.92465 20.8464 2.86466 19.8621C1.79462 18.8685 1.25 17.393 1.25 15.5V8.5C1.25 6.60705 1.79462 5.13152 2.86466 4.1379Z"
+                                            fill="#2563eb"></path>
+                                        <path id="vector (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.3633 7.31026C19.6166 7.63802 19.5562 8.10904 19.2285 8.3623L13.6814 12.6486C12.691 13.4138 11.3089 13.4138 10.3185 12.6486L4.77144 8.3623C4.44367 8.10904 4.38328 7.63802 4.63655 7.31026C4.88982 6.98249 5.36083 6.9221 5.6886 7.17537L11.2356 11.4616C11.6858 11.8095 12.3141 11.8095 12.7642 11.4616L18.3113 7.17537C18.6391 6.9221 19.1101 6.98249 19.3633 7.31026Z"
+                                            fill="#2563eb"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="w-full mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-headline"> Subscribe to Our
+                                    Newsletter
+                                </h3>
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-500"> Enter your email to subscribe to our newsletter.
+                                    </p>
+                                    <!-- Email input -->
+                                    <input type="email" id="email-input"
+                                        class="mt-2 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-500"
+                                        placeholder="john@doe.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                        <!-- Subscribe button -->
+                        <button id="subscribe-btn" type="button"
+                            class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-500 text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm">
+                            Subscribe </button>
+                        <!-- Cancel button -->
+                        <button id="cancel-btn" type="button"
+                            class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                            Cancel </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         let toTopButton = document.getElementById("to-top-button");
         const searchButton = document.querySelector('#search-button');
         const overlay = document.querySelector('#my-overlay');
         const overlayCloseButton = document.querySelector('#close-overlay');
+
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modal = document.getElementById('modal');
+        const subscribeButton = document.getElementById('subscribe-button');
+        const cancelButton = document.getElementById('cancel-btn');
 
         // When the user scrolls down 200px from the top of the document, show the button
         window.onscroll = function () {
@@ -762,6 +834,26 @@
         observer.observe(document.querySelector('#upcoming-artist-section'));
         observer.observe(document.querySelector('#interviews-section'));
         observer.observe(document.querySelector('#reviews-sections'));
+
+
+        // Function to open modal
+        function openModal() {
+            modalOverlay.classList.remove('hidden');
+            modal.classList.remove('hidden');
+        }
+
+        // Function to close modal
+        function closeModal() {
+            modalOverlay.classList.add('hidden');
+            modal.classList.add('hidden');
+        }
+
+        // Add event listeners
+        subscribeButton.addEventListener('click', openModal);
+        cancelButton.addEventListener('click', closeModal);
+
+        // Close modal on overlay click
+        modalOverlay.addEventListener('click', closeModal);
 
     </script>
 </body>
