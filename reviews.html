@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crescendo | Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tw-config.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="reviews" class="font-sans bg-bg text-text">
+
+  <div class="max-w-shell-wide mx-auto px-6 pt-14 pb-16 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-10 items-start">
+    <section>
+      <div class="flex items-end justify-between gap-5 mb-7 flex-wrap">
+        <div>
+          <div class="text-[13px] tracking-[0.28em] uppercase text-cyan mb-3">Fresh takes</div>
+          <h1 class="m-0 text-[clamp(34px,4.5vw,52px)] font-bold tracking-[-0.01em]">Reviews</h1>
+        </div>
+        <div class="relative">
+          <button id="sort-btn" class="flex items-center gap-2.5 bg-elevated border border-hair-12 rounded-btn text-text font-sans text-[13px] px-4 py-2.5 cursor-pointer hover:border-cyan transition-colors">
+            <span class="text-muted">Sort by</span> <span id="sort-label">Latest</span>
+            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div id="sort-menu" class="hidden absolute right-0 top-[calc(100%+6px)] min-w-[160px] bg-elevated border border-hair-12 rounded-btn overflow-hidden z-20 shadow-menu">
+            <button data-sort="latest" class="block w-full text-left bg-transparent border-0 text-cyan font-sans text-[13px] px-4 py-3 cursor-pointer hover:bg-[color:var(--cyan-08)] hover:text-cyan">Latest</button>
+            <button data-sort="oldest" class="block w-full text-left bg-transparent border-0 text-text font-sans text-[13px] px-4 py-3 cursor-pointer hover:bg-[color:var(--cyan-08)] hover:text-cyan">Oldest</button>
+            <button data-sort="az" class="block w-full text-left bg-transparent border-0 text-text font-sans text-[13px] px-4 py-3 cursor-pointer hover:bg-[color:var(--cyan-08)] hover:text-cyan">A – Z</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="reviews-grid" class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
+        <article data-card data-date="6" data-title="Glass Bloom — Night Signals" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-1 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Glass Bloom — Night Signals</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 6, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+        <article data-card data-date="5" data-title="Amber Static — Low Tide" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-2 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Amber Static — Low Tide</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 5, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+        <article data-card data-date="4" data-title="Novella Court — Reverie" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-3 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Novella Court — Reverie</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 4, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+        <article data-card data-date="3" data-title="Paper Suns — Half Light" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-4 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Paper Suns — Half Light</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 3, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+        <article data-card data-date="2" data-title="Cassette Youth — Rewind" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-5 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Cassette Youth — Rewind</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 2, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+        <article data-card data-date="1" data-title="Delta Haze — Slow Burn" class="bg-elevated border border-hair rounded-card overflow-hidden flex flex-col transition-all duration-[350ms] ease hover:-translate-y-1.5 hover:border-hair-cyan">
+          <div class="h-[170px] bg-art-6 relative"><div class="absolute inset-0 bg-stripe"></div><span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[11px] text-[rgba(232,237,242,0.45)]">article image</span></div>
+          <div class="p-[18px] flex flex-col gap-2 flex-1">
+            <div class="text-[11px] tracking-[0.22em] uppercase text-cyan">Review</div>
+            <h2 class="m-0 text-[17px] font-semibold leading-snug"><a href="single.html" class="hover:text-cyan transition-colors">Delta Haze — Slow Burn</a></h2>
+            <div class="text-xs text-dim"><a href="author.html" class="hover:text-cyan transition-colors">Leroy Jenkins</a> · June 1, 2020</div>
+            <p class="m-0 text-[13.5px] leading-relaxed text-muted flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+            <a href="single.html" class="inline-flex items-center gap-2 text-[13px] text-cyan font-medium hover:gap-3 hover:text-cyan-hover transition-all">Read more <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="flex flex-col gap-8">
+      <div class="bg-elevated border border-hair rounded-card p-[22px]">
+        <h2 class="m-0 mb-[18px] text-[13px] tracking-[0.24em] uppercase">Recent</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-1 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-cyan">Music</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-2 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-cyan">Review</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-3 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-cyan">Interview</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+        </div>
+      </div>
+      <div class="bg-elevated border border-hair rounded-card p-[22px]">
+        <h2 class="m-0 mb-[18px] text-[13px] tracking-[0.24em] uppercase">Popular</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-4 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-magenta">Music Review</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-5 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-magenta">Music Interview</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+          <div class="flex gap-3"><div class="w-14 h-14 flex-none rounded-md bg-art-6 relative overflow-hidden"><div class="absolute inset-0 bg-stripe-sm"></div></div><div class="flex flex-col gap-1"><span class="text-[10px] tracking-[0.2em] uppercase text-magenta">Music</span><a href="single.html" class="text-[13px] leading-snug text-text hover:text-cyan transition-colors">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><span class="text-[11px] text-dim">3 days ago</span></div></div>
+        </div>
+      </div>
+      <div data-subscribe-box class="bg-panel-tint border border-hair-12 rounded-card p-[22px]">
+        <p class="m-0 mb-4 text-[15px] font-semibold leading-snug">Want us to email you with the latest uploads?</p>
+        <div data-form class="flex flex-col gap-2">
+          <input type="email" placeholder="john@doe.com" class="w-full box-border bg-bg border border-hair-12 rounded-btn outline-none text-text font-sans text-[13px] px-3.5 py-3">
+          <button data-subscribe class="bg-signature border-0 rounded-btn text-header font-bold text-[13px] py-3 cursor-pointer font-sans hover:brightness-110 transition">Subscribe</button>
+        </div>
+        <div data-success class="hidden p-3 rounded-btn border border-hair-cyan text-cyan text-[13px] text-center">You're on the list. Talk soon.</div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Crescendo — design tokens + a small set of helper classes.
+   Layout/spacing/typography is handled by Tailwind utilities in the markup;
+   Tailwind (tw-config.js) maps its color/gradient/font tokens to the CSS
+   variables defined here, so there is no hardcoded hex outside :root.
+   ========================================================================== */
+
+:root {
+  /* Backgrounds */
+  --bg: #0B0F14;
+  --bg-elevated: #121820;
+  --bg-alt: #0E1319;
+  --header: #07090C;
+
+  /* Text */
+  --text: #E8EDF2;
+  --text-muted: #93A1B0;
+  --text-dim: #5F6B78;
+  --text-soft: #B9C4CF;
+
+  /* Accents */
+  --cyan: #22C9E1;
+  --magenta: #C13FE0;
+  --cyan-hover: #6FD9EA;
+  --gradient: linear-gradient(90deg, #22C9E1, #C13FE0);
+  --rule: linear-gradient(90deg, rgba(34,201,225,0), #22C9E1 35%, #C13FE0 65%, rgba(193,63,224,0));
+
+  /* Lines / borders */
+  --border: rgba(255,255,255,0.08);
+  --border-soft: rgba(255,255,255,0.06);
+  --border-12: rgba(255,255,255,0.12);
+  --border-cyan: rgba(34,201,225,0.5);
+  --border-magenta: rgba(193,63,224,0.5);
+  --cyan-08: rgba(34,201,225,0.08);
+  --cyan-12: rgba(34,201,225,0.12);
+  --cyan-30: rgba(34,201,225,0.3);
+  --overlay: rgba(4,6,9,0.82);
+
+  /* Radii */
+  --r-card: 10px;
+  --r-panel: 12px;
+  --r-panel-lg: 14px;
+  --r-btn: 8px;
+  --r-chip: 4px;
+
+  /* Placeholder-art diagonal-stripe overlay */
+  --stripe: repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 10px, rgba(0,0,0,0) 10px 20px);
+  --stripe-sm: repeating-linear-gradient(135deg, rgba(255,255,255,0.05) 0 6px, rgba(0,0,0,0) 6px 12px);
+
+  /* Placeholder-art gradient duos (dark teal -> purple) */
+  --art-1: linear-gradient(160deg, #0E3A44, #122A4E);
+  --art-2: linear-gradient(160deg, #2A1140, #0E3A44);
+  --art-3: linear-gradient(160deg, #123A2E, #1B1140);
+  --art-4: linear-gradient(160deg, #3A1130, #113A44);
+  --art-5: linear-gradient(160deg, #11303A, #2A1140);
+  --art-6: linear-gradient(160deg, #1B1140, #123A2E);
+
+  /* Chart cards */
+  --chart-1: linear-gradient(100deg, #0E3A44, #1B1140 70%);
+  --chart-2: linear-gradient(100deg, #123A2E, #113A44 70%);
+  --chart-3: linear-gradient(100deg, #2A1140, #3A1130 70%);
+
+  /* Genre tiles */
+  --genre-1: linear-gradient(160deg, #3A1130, #122A4E);
+  --genre-2: linear-gradient(160deg, #0E3A44, #2A1140);
+  --genre-3: linear-gradient(160deg, #1B1140, #123A2E);
+  --genre-4: linear-gradient(160deg, #113A44, #3A1130);
+  --genre-5: linear-gradient(160deg, #122A4E, #0E3A44);
+  --genre-6: linear-gradient(160deg, #2A1140, #113A44);
+
+  /* Tinted gradient panels (author profile, reviews subscribe box) */
+  --panel-tint: linear-gradient(160deg, rgba(34,201,225,0.1), rgba(193,63,224,0.1));
+
+  /* Card + hero scrims */
+  --card-scrim: linear-gradient(180deg, rgba(7,9,12,0.35), rgba(7,9,12,0) 40%, rgba(7,9,12,0.85));
+  --hero-scrim: linear-gradient(90deg, rgba(7,9,12,0.94) 10%, rgba(7,9,12,0.55) 55%, rgba(7,9,12,0.15));
+  --hero-fade: linear-gradient(180deg, rgba(11,15,20,0), #0B0F14);
+  --article-scrim: linear-gradient(180deg, rgba(7,9,12,0.1), rgba(7,9,12,0.55));
+}
+
+/* Base */
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Gradient text (kept as a class so Safari gets the -webkit- prefix) */
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Scroll-reveal initial state (JS flips these when the element enters view) */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal--sm { transform: translateY(16px); transition: opacity .5s ease, transform .5s ease, background .3s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* Hero entrance */
+@keyframes heroIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.hero-in { animation: heroIn .7s ease both; }
+
+/* Chart like button */
+.like-btn { color: var(--text-dim); transition: transform .2s ease, color .2s ease; }
+.like-btn:hover { transform: scale(1.15); }
+.like-btn svg { fill: none; }
+.like-btn.is-liked { color: var(--magenta); }
+.like-btn.is-liked svg { fill: currentColor; }
+
+/* No horizontal page scroll on any viewport */
+body { overflow-x: hidden; }
